@@ -318,7 +318,7 @@ def make_row():
     return {
         "id": str(uuid.uuid4()),
         "founder_name": name,
-        "email": F.email(),
+        "email": f"{name.lower().replace(' ', '_')}@example.com",
         "role": role,
         "company": company,
         "location": random.choice(INDIAN_CITIES),
@@ -326,7 +326,7 @@ def make_row():
         "about": create_realistic_about(name, keywords, role),
         "keywords": keywords,
         "stage": random.choice(STAGES),
-        "linked_in": f"https://www.linkedin.com/in/{name.lower().replace(' ', '-')}",
+        "linked_in": f"https://www.linkedin.com/in/",
     }
 
 def generate_csv(out_path="data/founders.csv", n=700):
