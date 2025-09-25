@@ -140,7 +140,7 @@ if authentication_status == True:
         return final_results, combined_message
 
     # ---------- Main App UI ----------
-    st.title("🔒 Enhanced RAG People Finder")
+    st.title("Enhanced RAG People Finder")
     st.write("**Advanced Features:** Dynamic location matching + Fusion retrieval + Contextual reranking")
 
     # Load resources with error handling
