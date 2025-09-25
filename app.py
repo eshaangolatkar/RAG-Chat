@@ -95,7 +95,7 @@ def enhanced_search_pipeline(query: str, model, df, embeddings,
     return final_results, combined_message
 
 # ---------- UI ----------
-st.title("🚀 Enhanced RAG People Finder")
+st.title("Enhanced RAG People Finder")
 st.write("**Advanced Features:** Dynamic location matching + Fusion retrieval + Contextual reranking")
 
 # Load resources
@@ -253,7 +253,7 @@ if show_debug:
 
 # Footer
 st.markdown("---")
-st.markdown("**🔥 Enhanced Features:**")
+st.markdown("**Enhanced Features:**")
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -297,4 +297,5 @@ python generate_dataset.py
 
 # Build indices (if needed)  
 python indexing.py
+
     """, language="bash")
